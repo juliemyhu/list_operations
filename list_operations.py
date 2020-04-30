@@ -49,7 +49,7 @@ def top(input_list):
 
     """
 
-    return []
+    return input_list.pop()
 
 
 def first_three(input_list):
