@@ -48,9 +48,7 @@ def top(input_list):
     ['Jan', 'Feb']
 
     """
-
-    return input_list.pop()
-
+    return input_list[0:-1]   #???input_list = input_list.pop()
 
 def first_three(input_list):
     """Return the first three elements of the input list.
@@ -132,8 +130,8 @@ def replace_head(input_list):
 
     """
 
-    input_list[0] = [42]
-    return input_list
+    input_list[0] = 42
+    return None
 
 
 def replace_third_and_last(input_list):
@@ -148,7 +146,9 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
+    return None
 
 
 def replace_middle(input_list):
@@ -166,8 +166,8 @@ def replace_middle(input_list):
     True
 
     """
-
-    pass
+    input_list[2:-2]=[42,37]
+    return None
 
 
 def delete_third_and_seventh(input_list):
@@ -181,8 +181,10 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
-    pass
+    
+    del input_list[2]
+    del input_list[5] 
+    return None
 
 
 def delete_middle(input_list):
@@ -198,9 +200,9 @@ def delete_middle(input_list):
     True
 
     """
+    del input_list[2:-2]
 
-    pass
-
+    return None
 
 # This is the part were we actually run the doctests.
 
